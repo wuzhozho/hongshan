@@ -152,8 +152,6 @@ export default function ChatDisplay({ message }: { message: Message }) {
   const handleDeleteMessage = (message: Message) => {
     delMessage(message);
   };
-
-  return null; 
   
   if (message.role !== 'system') {
   return (
