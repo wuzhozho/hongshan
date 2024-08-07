@@ -87,6 +87,8 @@ export default function ImageCard({
       component="a"
       href="#"
       onClick={onClick}
+      // 固定图片宽高，使页面不至于乱变位置
+      style={{ height: '250px',width: '250px' }}
     >
       <div className={classes.image}>
         <Image
