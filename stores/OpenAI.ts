@@ -149,8 +149,8 @@ export async function streamCompletion(
   );
 
   const payload = JSON.stringify({
-    // messages: submitMessages.map(({ role, content }) => ({ role, content })),
-    messages: submitMessages.map(({ role, content }) => ({ role, content: role === 'user' ? `${content} 请简短回答` : content })),
+    messages: submitMessages.map(({ role, content }) => ({ role, content })),
+    // messages: submitMessages.map(({ role, content }) => ({ role, content: role === 'user' ? `${content} 请简短回答` : content })),
     // messages: submitMessages.map(({ role, content }) => ({ role, content: role === 'user' ? `${content} Please answer briefly` : content })),
     stream: true,
     ...{
