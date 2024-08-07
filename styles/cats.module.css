@@ -1,0 +1,11 @@
+/* App.css */
+.myTable {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.myTable th, .myTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
