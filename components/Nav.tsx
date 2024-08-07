@@ -163,8 +163,8 @@ export default function NavbarSimple() {
   const { t, i18n } = useTranslation();
   const languageOptions = [
     { value: 'zh-CN', label: '简体中文' },
-    { value: 'zh-TW', label: '繁体中文' },
-    { value: 'en', label: 'English' },
+    // { value: 'zh-TW', label: '繁体中文' },
+    // { value: 'en', label: 'English' },
   ];
 
   // 获取和设置语言的状态变量方法
@@ -426,7 +426,7 @@ export default function NavbarSimple() {
           onChange={handleLanguageChange}
           placeholder="Select Language"
           size="sm"
-          defaultValue='en'
+          defaultValue='zh-CN'
           sx={{ width: '100%', textAlign: 'left' }} // 调整宽度和文字对齐方式
         />
       </Navbar.Section>
