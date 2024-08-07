@@ -189,7 +189,7 @@ export async function streamCompletion(
           return;
         }
 
-        const content = parsed.choices?.[0].delta?.content;
+        const content = parsed.choices?.[0]?.delta?.content;
         if (content === undefined) {
           continue;
         }
