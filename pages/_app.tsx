@@ -50,8 +50,8 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-        <title>港大-商学院-LLM-Chatbot实验平台</title>
-        <meta name="description" content="港大-商学院-LLM-Chatbot实验平台" />
+        <title>红山/C龙文化-Chatbot Voicebot平台</title>
+        <meta name="description" content="红山/C龙文化-Chatbot Voicebot平台" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
