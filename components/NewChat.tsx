@@ -245,20 +245,23 @@ function CardsCarousel({ children }: { children: React.ReactNode }) {
       controlsOffset="xs"
       nextControlIcon={<IconArrowRight size={16} />}
       previousControlIcon={<IconArrowLeft size={16} />}
-      sx={{ maxWidth: "90vw" }}
+      sx={{ 
+        maxWidth: "90vw" ,
+        zIndex: 100 // 设置 zIndex 为 100
+      }}
     >
       {slides}
     </Carousel>
   );
 }
 
-export function NewChatCarousel1111() {
+export default function NewChatCarousel() {
   const router = useRouter();
   const { t, i18n } = useTranslation();
   
   return (
     <Container py="xl">
-      {/* <h2 style={{ textAlign: "center" }}> Choose a prompt...</h2> */}
+      <h2 style={{ textAlign: "center" }}> Choose a prompt...</h2>
       <CardsCarousel>
         {Object.keys(characters).map((key) => {
           // @ts-ignore
@@ -300,13 +303,14 @@ export function NewChatCarousel1111() {
         }}
       >
         <h2> {t('plat')}</h2>
-        <IconArrowDown style={{ marginLeft: "0.5rem" }} />
+        {/* <IconArrowDown style={{ marginLeft: "0.5rem" }} /> */}
       </div>
     </Container>
   );
 }
 
-export default function NewChatCarousel() {
+// 港大原先保险按钮样式
+export function NewChatCarousel2() {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
@@ -320,8 +324,6 @@ export default function NewChatCarousel() {
   // const firstCharacterKey = Object.keys(characters)[0];
   const firstCharacterKey = "智能保险代理人";
   const firstCharacter = characters['智能投资顾问']; // 获取第一个角色的数据
-
-
 
   return (
     <Container py="xl">
